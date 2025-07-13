@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class laptop {
+    String oddoreven(int a){
+      if(a%2==0){
+        return "even";
+      }
+      else{
+        return "odd";
+      }
+    }
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        laptop obj1=new laptop();
+        int a=sc.nextInt();
+        String result = obj1.oddoreven(a);
+        System.out.println(result);
+    }
+    }
