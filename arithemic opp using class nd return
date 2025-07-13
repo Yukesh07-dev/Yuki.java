@@ -1,0 +1,33 @@
+public class laptop {
+    int sum(int a,int b){
+        int sum =a+b;
+        return sum;
+    }
+
+    int sub(int a,int b){
+       int sub=a-b;
+       return sub;
+    }
+
+    int mul(int a, int b){
+       int  mul=a*b;
+       return mul;
+    }
+
+    int div(int a, int b){
+        int div = a/b;
+        return div;
+    }
+    public static void main(String[] args) {
+        laptop obj1=new laptop();
+        int add = obj1.sum(10,20);
+        int sub = obj1.sub(20,10);
+        int mul=  obj1.mul(5,10);
+        int div = obj1.div(10,5);
+        
+        System.out.println(add);
+        System.out.println(sub);
+        System.out.println(mul);
+        System.out.println(div);
+    }
+}
