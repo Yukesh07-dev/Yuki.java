@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class laptop {
+    String oddoreven(int mark){
+      if(mark>=35){
+        return "pass";
+      }
+      else{
+        return "fail";
+      }
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        laptop obj1=new laptop();
+        int mark=sc.nextInt();
+        String result = obj1.oddoreven(mark);
+        System.out.println(result);
+    }
+    }
