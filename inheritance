@@ -1,0 +1,52 @@
+package paractice1_java;
+
+class vehicle{
+	String brand;
+	int year;
+	
+	void startengine() {
+		System.out.println("engine started");
+	}
+}
+
+class car extends vehicle{
+	String fueltype;
+	@Override
+	void startengine() {
+		System.out.println("car engine starts");
+	}
+	
+	void drive() {
+		System.out.println("car is driving");
+	}
+}
+
+class truck extends vehicle{
+	int loadcapacity;
+	
+	@Override
+	void startengine() {
+		System.out.println("truck engine starts");
+	}
+	void haul() {
+		System.out.println("truck is hauling");
+	}
+}
+public class animals {	  
+	public static void main(String[] args) {
+		car c1 = new car();
+		c1.brand="bmw";
+		c1.year=2025;
+		c1.fueltype ="petrol";
+		System.out.println(c1.brand + "        "+ c1.year + "        "  +c1.fueltype);
+		c1.startengine();
+		c1.drive();
+		truck t1=new truck();
+		t1.brand ="volvo";
+		t1.year=2022;
+		t1.loadcapacity=100;
+		System.out.println(t1.brand + "        "+ t1.year + "        "  +t1.loadcapacity);
+		t1.startengine();
+		t1.haul();
+	}
+}
